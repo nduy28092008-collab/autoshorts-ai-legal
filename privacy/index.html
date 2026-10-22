@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — AutoShorts AI</title>
+  <meta name="description" content="Privacy Policy for AutoShorts AI: local data, TikTok OAuth tokens, third-party processing, disconnection and deletion." />
+  <link rel="stylesheet" href="../assets/legal.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../">AutoShorts AI <span>Legal</span></a>
+      <nav aria-label="Legal navigation">
+        <a href="../terms/">Terms of Service</a>
+        <a href="./" aria-current="page">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap legal-page">
+    <p class="eyebrow">AutoShorts AI · V4.1</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 22 October 2026 · Last updated: 22 October 2026</p>
+
+    <div class="toc">
+      <p>Contents</p>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#scope">Scope of this policy</a></li>
+        <li><a href="#data">What data is processed</a></li>
+        <li><a href="#purposes">Why we process it</a></li>
+        <li><a href="#storage">Where data is stored</a></li>
+        <li><a href="#sharing">When data is shared</a></li>
+        <li><a href="#cookies">Cookies and website data</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#security">Security and limitations</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#transfers">International processing</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </div>
+
+    <section id="who">
+      <h2>1. Who we are</h2>
+      <p>AutoShorts AI is an <strong>independent personal project based in Vietnam</strong>. It is not a
+        registered company. For the purposes of applicable data-protection law, the Project’s maintainer acts as
+        the controller of the limited personal data described below.</p>
+      <p>Contact for privacy questions, access requests, or deletion requests:
+        <a href="mailto:nduy28092008@gmail.com">nduy28092008@gmail.com</a>.</p>
+    </section>
+
+    <section id="scope">
+      <h2>2. Scope of this policy</h2>
+      <p>This policy explains how data is handled when you use the AutoShorts AI software and when you visit
+        these legal pages. It does <strong>not</strong> govern TikTok, Shopee, Google, Microsoft, GitHub, or any
+        other third-party service. Those services publish their own privacy policies.</p>
+      <p>AutoShorts AI is designed primarily as local software. We do not operate a central server that stores
+        your products, videos, or TikTok tokens. The optional TikTok connection is handled by the software on
+        your own computer.</p>
+    </section>
+
+    <section id="data">
+      <h2>3. What data is processed</h2>
+
+      <h3>3.1 Data stored locally by the application</h3>
+      <ul>
+        <li><strong>Product data:</strong> Shopee links, product names, prices you enter, descriptions, images,
+          attributes, and metadata source information.</li>
+        <li><strong>Creative data:</strong> generated scripts, captions, hashtags, voice-over audio, subtitles,
+          thumbnails, MP4 files, and publishing packages.</li>
+        <li><strong>Operational data:</strong> job history, video status, review decisions, settings, usage
+          counters, and application logs.</li>
+        <li><strong>Local database:</strong> the application’s SQLite database and working files.</li>
+      </ul>
+      <p>This data is stored in the application folder on your device (for example, the <code>data/</code>,
+        <code>output/</code>, and logging directories), unless you choose to move or back it up elsewhere.</p>
+
+      <h3>3.2 TikTok account data (only if you connect TikTok)</h3>
+      <p>If you choose to connect a TikTok account, TikTok’s OAuth flow returns an access token, a refresh token,
+        and information about the permissions granted. The Project may also request basic profile information
+        such as your TikTok display name, avatar URL, and open ID, if the granted scopes allow it.</p>
+      <p>These values are stored in a local token file (by default
+        <code>secrets/tiktok_token.json</code>). The application does not ask for your TikTok password and does
+        not use TikTok login cookies or automated browser sessions.</p>
+
+      <h3>3.3 Data sent to TikTok when you publish</h3>
+      <p>When you explicitly confirm publishing or sending a draft, the Project sends the selected video file,
+        caption, hashtags, privacy selection, commercial-content settings, AI-generated-content flag, and related
+        API parameters to TikTok. TikTok also receives technical information such as your IP address and request
+        metadata as part of that API call. TikTok processes this data under its own privacy policy.</p>
+
+      <h3>3.4 Data sent to other service providers</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Provider</th><th>What may be sent</th><th>When</th></tr></thead>
+          <tbody>
+            <tr><td>Shopee</td><td>HTTP requests for the public product page you provide; standard request data such as IP address and user agent.</td><td>When you ask the Project to inspect a Shopee link.</td></tr>
+            <tr><td>Google Gemini</td><td>Product facts and prompts needed to generate a script.</td><td>Only if Gemini is enabled and configured with an API key.</td></tr>
+            <tr><td>Microsoft Edge TTS</td><td>The voice-over text needed to synthesize speech.</td><td>When the Project creates voice-over (unless another TTS engine is selected).</td></tr>
+            <tr><td>TikTok</td><td>OAuth authorization data, account information, video and publishing parameters.</td><td>When you connect an account or confirm a post/draft.</td></tr>
+            <tr><td>GitHub Pages</td><td>Standard web request data (such as IP address, browser information) when you visit these legal pages.</td><td>When you open this website.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>These providers may process data outside Vietnam. Their own terms and privacy policies apply.</p>
+    </section>
+
+    <section id="purposes">
+      <h2>4. Why we process it</h2>
+      <ul>
+        <li>to provide the features you request: product lookup, script generation, voice-over, video rendering,
+          review, and storage of your projects;</li>
+        <li>to connect to TikTok and publish or draft content <strong>only after your explicit confirmation</strong>;</li>
+        <li>to maintain security, prevent duplicate uploads, diagnose errors, and improve reliability;</li>
+        <li>to respond to your support, privacy, or deletion requests; and</li>
+        <li>to comply with applicable legal obligations.</li>
+      </ul>
+      <p>Where a legal basis is required, processing is generally based on performing the service you request,
+        your consent (for optional connections such as TikTok), and legitimate interests in operating and
+        securing a local personal project.</p>
+    </section>
+
+    <section id="storage">
+      <h2>5. Where data is stored</h2>
+      <p>Product data, videos, logs, settings, and TikTok tokens are stored on <strong>your own device</strong> in
+        the application folder. We do not maintain a copy on a central server.</p>
+      <p>The TikTok token file is created with restricted file permissions where the operating system supports
+        it. The application does not encrypt the token file itself beyond the protection provided by your
+        operating system and device. You are responsible for securing your computer, user account, backups, and
+        any cloud-sync folder in which the project is stored.</p>
+      <p>These legal pages are static files hosted on GitHub Pages. They do not receive or store your application
+        data.</p>
+    </section>
+
+    <section id="sharing">
+      <h2>6. When data is shared</h2>
+      <p>We do not sell your personal data, and we do not use it for advertising or profiling. Data is shared
+        only:</p>
+      <ul>
+        <li>with TikTok, when you choose to connect an account or confirm a post/draft;</li>
+        <li>with Shopee, when you ask the Project to retrieve a public product page;</li>
+        <li>with Google Gemini or Microsoft Edge TTS when you enable those features;</li>
+        <li>with GitHub when you visit these pages or use GitHub-based deployment; and</li>
+        <li>with authorities or other parties when required by law, or to protect rights and safety.</li>
+      </ul>
+      <p>Because the application is local, you control the main copy of your data. If you share your project
+        folder, database, logs, videos, or token file with someone else, you are sharing that data yourself.</p>
+    </section>
+
+    <section id="cookies">
+      <h2>7. Cookies and website data</h2>
+      <p>These legal pages do not set cookies, use analytics, or load advertising or tracking scripts. They use
+        only locally hosted CSS and system fonts. GitHub, as the hosting provider, may process standard request
+        logs under its own privacy policy.</p>
+      <p>The local dashboard may use browser local storage for preferences such as the selected display theme.
+        It is not used for advertising or cross-site tracking.</p>
+    </section>
+
+    <section id="retention">
+      <h2>8. Retention, disconnection, and deletion</h2>
+      <h3>8.1 How long data is kept</h3>
+      <p>Local data remains on your device until you delete it or remove the application. TikTok tokens remain
+        until you disconnect, delete the token file, or revoke access. We do not keep a separate server-side copy
+        to delete.</p>
+
+      <h3>8.2 Disconnect TikTok</h3>
+      <ol>
+        <li>Open the AutoShorts AI dashboard and go to the <strong>TikTok</strong> page.</li>
+        <li>Select <strong>Disconnect</strong>. The application attempts to revoke the OAuth grant with TikTok
+          and deletes the local token file.</li>
+        <li>You can also review and revoke the app’s access in your TikTok account’s security or connected-apps
+          settings.</li>
+      </ol>
+      <p>Revoking access does not delete posts or drafts that already exist on TikTok. Manage those inside
+        TikTok.</p>
+
+      <h3>8.3 Delete local data</h3>
+      <p>To delete the Project’s local data, close the application and delete the relevant project folders and
+        files, including the local database (<code>data/</code>), generated media (<code>output/</code>), logs,
+        and the token file (<code>secrets/tiktok_token.json</code>). If you use backups or cloud sync, delete
+        those copies as well.</p>
+
+      <h3>8.4 Request deletion</h3>
+      <p>If you believe the Project holds personal data about you and you cannot remove it yourself, email
+        <a href="mailto:nduy28092008@gmail.com">nduy28092008@gmail.com</a> with enough detail for us to identify
+        the data. We will assess the request and respond within a reasonable period (normally within 30 days).
+        We may need to verify that you are the account holder. Because most data is local, we may ask you to
+        delete local files and confirm the action rather than being able to delete them remotely.</p>
+    </section>
+
+    <section id="security">
+      <h2>9. Security and limitations</h2>
+      <p>We take practical measures appropriate for a local personal project: OAuth is handled in the backend,
+        client secrets and tokens are not shown in the browser, the token file has restricted permissions where
+        supported, tokens are not written to application logs, and the public website contains only static legal
+        pages.</p>
+      <p>However, <strong>no method of storage or transmission is perfectly secure</strong>, and the Project does
+        not provide enterprise-grade security guarantees. In particular:</p>
+      <ul>
+        <li>the application does not encrypt your local database, videos, or token file itself;</li>
+        <li>anyone with access to your computer or synced project folder may be able to read your data or token;</li>
+        <li>third-party providers process data under their own security practices; and</li>
+        <li>you are responsible for keeping your device, operating system, API keys, and accounts secure.</li>
+      </ul>
+      <p>If you believe a token or account has been compromised, disconnect TikTok, revoke access in TikTok, and
+        rotate any API keys you use.</p>
+    </section>
+
+    <section id="rights">
+      <h2>10. Your rights</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, restrict, object to, or
+        port your personal data, and to withdraw consent. You may also have the right to complain to a data
+        protection authority.</p>
+      <p>To exercise these rights, email
+        <a href="mailto:nduy28092008@gmail.com">nduy28092008@gmail.com</a>. Because the Project is local-first,
+        the fastest way to exercise deletion or access is usually through your own device and the dashboard.
+        We will not charge a fee for a reasonable request and will explain any legal limitation that applies.</p>
+    </section>
+
+    <section id="children">
+      <h2>11. Children</h2>
+      <p>The Project is not directed to children and is not intended for anyone under 18 (or the age of legal
+        majority in their jurisdiction). We do not knowingly collect personal data from children. If you believe
+        a child has used the Project, contact us so the situation can be reviewed.</p>
+    </section>
+
+    <section id="transfers">
+      <h2>12. International processing</h2>
+      <p>Third-party providers such as TikTok, Shopee, Google, Microsoft, and GitHub may process data in
+        countries other than Vietnam. Where required, those providers are responsible for implementing their own
+        transfer safeguards. Because the main application data remains on your device, international transfer
+        mainly arises when you choose to use those integrations.</p>
+    </section>
+
+    <section id="changes">
+      <h2>13. Changes to this policy</h2>
+      <p>We may update this Privacy Policy to reflect changes in the Project, the law, or third-party services.
+        The updated version will be posted on this page with a new “Last updated” date. Material changes will be
+        highlighted where practical.</p>
+    </section>
+
+    <section id="contact">
+      <h2>14. Contact</h2>
+      <p>For privacy questions, access or deletion requests, or concerns about this policy:</p>
+      <p><strong>Email:</strong> <a href="mailto:nduy28092008@gmail.com">nduy28092008@gmail.com</a><br />
+        <strong>Operator:</strong> AutoShorts AI, an independent personal project, Vietnam.</p>
+      <div class="callout">
+        <strong>Note:</strong> This policy describes the Project as it is currently designed. If you deploy a
+        modified version, add analytics, or operate it as a commercial service, you must update your own privacy
+        notices and obtain any required consents.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 AutoShorts AI — independent personal project.</p>
+      <p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a> · <a href="mailto:nduy28092008@gmail.com">Contact</a></p>
+    </div>
+  </footer>
+</body>
+</html>
